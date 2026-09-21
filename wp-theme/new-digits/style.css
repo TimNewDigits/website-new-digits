@@ -1,0 +1,128 @@
+/*
+Theme Name: New Digits
+Theme URI: https://github.com/TimNewDigits/website-new-digits
+Author: New Digits
+Description: Eenvoudig thema voor de website van New Digits.
+Version: 1.0.0
+Requires at least: 6.0
+Requires PHP: 7.4
+Text Domain: new-digits
+*/
+
+:root {
+  --bg: #ffffff;
+  --text: #1a1a2e;
+  --muted: #5c5c70;
+  --accent: #3b5bdb;
+  --surface: #f4f5fa;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #12121c;
+    --text: #ececf4;
+    --muted: #a0a0b4;
+    --accent: #7c94ff;
+    --surface: #1c1c2b;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+}
+
+a {
+  color: var(--accent);
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--surface);
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.site-header nav a {
+  margin-left: 1.25rem;
+  text-decoration: none;
+}
+
+.hero {
+  padding: 5rem 1.5rem;
+  text-align: center;
+  background: var(--surface);
+}
+
+.hero h1 {
+  margin: 0 0 1rem;
+  font-size: clamp(2rem, 6vw, 3.25rem);
+}
+
+.hero p {
+  max-width: 36rem;
+  margin: 0 auto 2rem;
+  color: var(--muted);
+}
+
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.section {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.site-footer {
+  padding: 1.5rem;
+  text-align: center;
+  color: var(--muted);
+  border-top: 1px solid var(--surface);
+}
+
+/* Inhoud van berichten en pagina's */
+.entry {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.entry img {
+  max-width: 100%;
+  height: auto;
+}
+
+.site-header nav ul {
+  display: flex;
+  gap: 1.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-header nav ul a {
+  text-decoration: none;
+}
